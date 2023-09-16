@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Search Weather <%=shopName%> </title>
+    <link rel="stylesheet"  type="text/css" href="main.css" />
+  </head>
+  <body>
+    <h1>Search weather by city</h1>
+    <form action="/weatherforcity" method="POST">
+      <p>Please type a city name below,</p>
+      <input id="searchbox" type="text" name="searchbox" value="city">
+      <input type="submit" value="Search" >
+    </form>
+    <br>
+    <button> <a href='/'>Home page </a></button>
+  </body>
+</html>

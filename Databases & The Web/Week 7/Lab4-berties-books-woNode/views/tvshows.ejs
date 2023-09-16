@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Show Search <%=shopName%></title>
+    <link rel="stylesheet"  type="text/css" href="main.css" />
+  </head>
+  <body>
+    <h1><%=shopName%></h1>
+    <h2>Enter a TV show or movie below.</h2>
+    <form method="POST" action="/tvshowsearch">
+        
+        <p>Name: <input id="name" type="text" name="name" value="Name" /></p>
+
+        <input type="submit" value="Search" />
+      </form>
+      <br>
+      <button> <a href='/'>Home page </a></button>
+  </body>
+</html>
