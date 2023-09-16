@@ -1,0 +1,80 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: darkcyan;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: cadetblue;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: LightSeaGreen;
+}
+
+p,li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+    color: orangered;
+    text-decoration: none;
+    padding:5px;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: DarkGoldenrod;
+    text-decoration: none;
+    padding:5px;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: orangered;
+    padding:5px;
+    border-radius: 15px;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+    text-decoration: none;
+    padding:5px;
+  }
+
+  /* Table text colour */
+  table {
+    color: forestgreen;
+  }
+
+  /* Makes the inputtext boxes red */
+  input[type=text], input[type=email], input[type=password], input[type=number] {
+    border: 2px solid red;
+    border-radius: 4px;
+  }
+
+  /* Styles buttons */
+  input[type=button], input[type=submit] {
+    background-color: peru;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 6px 22px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  button {
+    border: none;
+    border-radius: 20px;
+    background-color: peru;
+    padding: 6px 22px;
+  }

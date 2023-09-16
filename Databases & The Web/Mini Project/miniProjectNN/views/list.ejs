@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <title>Welcome to <%=siteName%></title>
+  <link rel="stylesheet"  type="text/css" href="main.css" />
+</head>
+<body>
+  <h1><%=siteName%></h1>
+  <%- include('partials/navbar') %>
+  <h2>Here are all the ingredients we have listed:</h2>
+
+      <table border="2px solid" cellspacing="7" border-collapse="collapse" >
+        <tr>
+            <th> Name </th>
+            <th> Typical value per </th>
+            <th> Unit of typical value </th>
+            <th> Carbs </th>
+            <th> Fat </th>
+            <th> Protein </th>
+            <th> Salt </th>
+            <th> Sugar </th>
+        </tr>
+        <% availableFood.forEach(function(food) { %>
+          <tr>
+              <td> <%=food.name %> </td>
+              <td> <%=food.value%> </td>
+              <td> <%=food.unit%> </td>
+              <td> <%=food.carbs%><%=food.unit%> </td>
+              <td> <%=food.fat%><%=food.unit%> </td>
+              <td> <%=food.protein%><%=food.unit%> </td>
+              <td> <%=food.salt%><%=food.unit%> </td>
+              <td> <%=food.sugar%><%=food.unit%> </td>
+          </tr>
+        <% }) %>
+    </table>
+    
+  </body>
+</html>

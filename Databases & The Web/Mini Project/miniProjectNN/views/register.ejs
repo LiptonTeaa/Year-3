@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Register for <%=siteName%></title>
+    <link rel="stylesheet"  type="text/css" href="main.css" />
+  </head>
+  <body>
+    <h1>Register for <%=siteName%></h1>
+    <%- include('partials/navbar') %>
+    <form method="POST" action="/registered">
+        <p>First name: <input id="first" type="text" name="first" value="first name" /></p>
+        <p>Last name: <input id="last" type="text" name="last" value="last name" /></p>
+        <p>Email: <input id="email" type="email" name="email" value="email" /></p>
+
+        <p>Username: <input id="user" type="text" name="user" value="username" /></p>
+        <p>Password: <input id="pass" type="password" name="pass" value="password" /></p>
+
+        <input type="submit" value="Register" />
+      </form>
+  </body>
+</html>

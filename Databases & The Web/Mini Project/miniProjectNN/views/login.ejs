@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Log in <%=siteName%></title>
+    <link rel="stylesheet"  type="text/css" href="main.css" />
+  </head>
+  <body>
+    <h1><%=siteName%></h1>
+    <%- include('partials/navbar') %>
+    <h2>Enter your credentials below.</h2>
+    <form method="POST" action="/loggedin">
+        
+        <p>Username: <input id="user" type="text" name="user" value="username" /></p>
+        <p>Password: <input id="pass" type="password" name="pass" value="password" /></p>
+
+        <input type="submit" value="Login" />
+      </form>
+      <br>
+  </body>
+</html>

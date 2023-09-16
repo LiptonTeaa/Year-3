@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Account Deletion <%=siteName%></title>
+    <link rel="stylesheet"  type="text/css" href="main.css" />
+  </head>
+  <body>
+    <h1><%=siteName%></h1>
+    <%- include('partials/navbar') %>
+    <h2>Enter your username below to delete your account:</h2>
+    <form method="POST" action="/deleted">
+        
+        <p>Username: <input id="user" type="text" name="user" value="username" /></p>
+
+        <input type="submit" value="Delete" />
+      </form>
+      <!-- <br>
+      <button> <a href='/'>Home page </a></button> -->
+  </body>
+</html>

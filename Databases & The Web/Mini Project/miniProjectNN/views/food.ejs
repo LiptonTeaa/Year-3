@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Food Deets <%=siteName%></title>
+    <link rel="stylesheet"  type="text/css" href="main.css" />
+  </head>
+  <body>
+    <h1>Food item details <%=siteName%></h1>
+    <%- include('partials/navbar') %>
+    <form method="POST" action="/food-store">
+        <p>Name: <input id="name" type="text" name="name" value="Name" /></p>
+        <p>Typical values per: <input id="value" type="number" name="value" value="0" /></p>
+        <p>Unit of the typical value: <input id="unit" type="text" name="unit" value="Units" /></p>
+        <p>Carbs: <input id="carbs" type="number" step =".01" name="carbs" value="0" /></p>
+        <p>Fat: <input id="fat" type="number" step =".01" name="fat" value="0" /></p>
+        <p>Protein: <input id="protein" type="number" step =".01" name="protein" value="0" /></p>
+        <p>Salt: <input id="salt" type="number" step =".01" name="salt" value="0" /></p>
+        <p>Sugar: <input id="sugar" type="number" step =".01" name="sugar" value="0" /></p>
+
+        <input type="submit" value="Add" />
+      </form>
+  </body>
+</html>

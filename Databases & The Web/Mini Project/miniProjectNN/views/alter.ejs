@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Food Update <%=siteName%></title>
+    <link rel="stylesheet"  type="text/css" href="main.css" />
+  </head>
+  <body>
+    <h1>Update food item details below <%=siteName%></h1>
+    <%- include('partials/navbar') %>
+    <form method="POST" action="alter-fin">
+
+        <br>
+        <br>
+
+        <table>
+            <tr>
+                <th> Name </th>
+                <th> Typical value per </th>
+                <th> Unit of typical value </th>
+                <th> Carbs </th>
+                <th> Fat </th>
+                <th> Protein </th>
+                <th> Salt </th>
+                <th> Sugar </th>
+            </tr>
+            <!-- It didn't make sense to loop when you're trying to update a record, make sure to be specific with the search term -->
+            <tr>
+                <td> <input id="name" type="text" name="name" value="<%=availableFood[0].name%>" /> </td>
+                <td> <input id="value" type="number" name="value" value="<%=availableFood[0].value%>" /> </td>
+                <td> <input id="unit" type="text" name="unit" value="<%=availableFood[0].unit%>" /> </td>
+                <td> <input id="carbs" type="number" step =".01" name="carbs" value="<%=availableFood[0].carbs%>" /> </td>
+                <td> <input id="fat" type="number" step =".01" name="fat" value="<%=availableFood[0].fat%>" /> </td>
+                <td> <input id="protein" type="number" step =".01" name="protein" value="<%=availableFood[0].protein%>" /> </td>
+                <td> <input id="salt" type="number" step =".01" name="salt" value="<%=availableFood[0].salt%>" /> </td>
+                <td> <input id="sugar" type="number" step =".01" name="sugar" value="<%=availableFood[0].sugar%>" /> </td>
+                <!-- <td> <input id="name" type="text" name="name" value="<//%=console.log(availableFood[0].unit)%>" /> </td> -->
+            </tr>
+        </table>
+
+        <br>
+
+        <input type="submit" value="Update" />
+        
+        <!-- <input type="button" value="Delete" formaction="delete-food" /> -->
+        <button type="submit" onclick="myFunction()" formaction="delete-food">Delete</button>
+    
+    </form>
+
+    <script>
+        function myFunction() {
+            alert("Confirm deletion!")
+            // if (confirm("Confirm deletion!")){
+            //     formaction="delete-food"
+            // }else{
+            //     window.open("update.ejs")
+            // };
+            // if (window.confirm("Do you really want to leave?") == true ) {
+            // formaction}else{
+            //     window.open("update");
+            // }
+        }
+    </script>
+    
+  </body>
+</html>
